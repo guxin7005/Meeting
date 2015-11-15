@@ -1,0 +1,53 @@
+11月14日 会议纪要
+参与者：牛红波 依依 李欣林 马德旺 古鑫 
+	
+今天主要学习GIT HUB下载clone, 本地修改，新建个人库与pull request。 学习使用GIT bash 进行命令行操作。
+
+例如Android studio打开https://github.com/tintedsky/ADD21_SwiperDipper复制到本地， 或者命令行输入git clone.
+ 
+修改完之后，考虑上传.
+首先进入目录
+Cd: /d/DMDownload/ADD21_SwiperDipper
+
+git status
+
+Git remote add [ADD] https://github.com/guxin7005/ADD
+
+在remote增加文件夹ADD
+
+$ git remote -v
+ADD21   https://github.com/guxin7005/ADD21.git (fetch)
+ADD21   https://github.com/guxin7005/ADD21.git (push)
+origin  https://github.com/tintedsky/ADD21_SwiperDipper.git (fetch)
+origin  https://github.com/tintedsky/ADD21_SwiperDipper.git (push)
+
+git commit –am ‘change double Tap’
+注释改动
+
+git log
+显示日志
+
+$ git config --global user.email guxin1988@gmail.com
+$ git config --global user.name guxin7005
+用户验证
+
+Push 文件上传
+Xin@xin MINGW64 /d/DMDownload/ADD21_SwiperDipper (master)
+$ git push ADD21 master
+Counting objects: 92, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (57/57), done.
+Writing objects: 100% (92/92), 87.93 KiB | 0 bytes/s, done.
+Total 92 (delta 8), reused 0 (delta 0)
+To https://github.com/guxin7005/ADD21.git
+ * [new branch]      master -> master
+
+在git hub网站上pull request
+ 
+Pull request 还是存在一些问题。
+
+
+下次内容: 
+
+	每人都实现pull request，初步实现协同合作。
+	Newboston Android Studio 教程继续学习，homework 讨论。
